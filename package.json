@@ -23,6 +23,9 @@
   "homepage": "https://github.com/firas-yangui/BDD#readme",
   "dependencies": {
     "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-util": "^3.0.8",
     "mocha": "^4.0.1"
   }
 }
