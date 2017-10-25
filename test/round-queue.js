@@ -2,6 +2,7 @@
 var chai = require('chai'),
     expect = chai.expect,
     should = chai.should();
+
 var RoundQueue = require('../app/round-queue');
 
 describe('Round-Queue ', function() {
