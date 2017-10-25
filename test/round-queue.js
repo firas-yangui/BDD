@@ -2,13 +2,13 @@
 var chai = require('chai'),
     expect = chai.expect,
     should = chai.should();
-var RoundQueue = require ('./app/round-queue');
+var RoundQueue = require('../app/round-queue');
 
 describe('Round-Queue ', function() {
     describe('When adding elements ', function() {
       it('Should add an element to the end of a non-full queue', function() {
         var nonFullQueue = new RoundQueue(3);
-        var originalSize = nonFullQueue.size();
+        var originalSize = nonFullQueue.size;
         var poppedElement = nonFullQueue.push(1);
 
         //when the queue is not full, no popping will be done
