@@ -44,7 +44,7 @@ RoundLinkedQueue.prototype.pop = function() {
         throw new Error('Cannot pop from empty queue');
     }
 
-    var data = this._root.data;
+    var data = this._root && this._root.data;
 
     this._root = this._root.next;
     this.size--;
